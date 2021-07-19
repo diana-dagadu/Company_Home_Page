@@ -11,6 +11,7 @@
     background-size: cover;
 }
 
+/* navigation */
 
 nav{
     display:flex;
@@ -35,7 +36,6 @@ nav-links{
     display: inline-block;
     padding:8px 12px;
     position: relative;
-
 }
 
 .nav-links ul li a{
@@ -45,23 +45,13 @@ nav-links{
 
 }
 
-.nav-links ul li a::after{
-    content: '';
-    width: 0%;
-    height: 2px;
+.nav-links ul li:hover{
     background: #f44336;
-    display: block;
-    margin: auto;
     transition: 0.5s;
-   
 }
 
-.nav-links ul li:hover::after{
-    width: 100%;
-    text-decoration: underline;
 
-}
-
+/* intro page */
 .text-box{
     width: 90%;
     color:white;
@@ -97,7 +87,7 @@ nav-links{
 .visit-btn:hover{
     border: 1px solid #f44336;
     background: #f44336;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
 @media (max-width: 700px){
@@ -108,7 +98,6 @@ nav-links{
 
 .nav-links ul li{
     display: block;
-    
 }
  
  .nav-links ul{
@@ -116,11 +105,10 @@ nav-links{
      margin-left: 50px;
  }
 
- 
 }
 
 
-/* mission*/
+/* mission, vision, core value*/
 
 .statements{
     width: 90%;
@@ -244,6 +232,7 @@ h3{
 .team-two{
     width:90%;
     margin: auto;
+
     text-align: center;
     padding-top: 50px;
     
