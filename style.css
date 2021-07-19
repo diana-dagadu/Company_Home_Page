@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image:url('/images/machowoman.jpg') ;
+    background-size: cover;
+}
+
+
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img{
+    width:150px;
+
+}
+
+nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+   
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    text-decoration: underline;
+
+}
+
+.text-box{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 2rem;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.visit-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.visit-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.1s;
+}
+
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 2rem;
+        padding: auto;
+    }
+
+.nav-links ul li{
+    display: block;
+    
+}
+ 
+ .nav-links ul{
+     padding:2px;
+     margin-left: 50px;
+ }
+
+ 
+}
+
+
+/* mission*/
+
+.statements{
+    width: 90%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.statements h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 31%;
+    background:  rgb(233, 232, 232);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing:  border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+
+}
+
+/* services */
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services{
+    width:90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.services-col{
+    flex-basis:  31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+.services-col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.services-col p{
+    padding: 0;
+    text-align: center;
+}
+
+.services-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.services h1{
+    margin-top: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* team */
+
+ .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-one{
+    width:90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.team-one h1{
+    font-size: 2rem;
+}
+
+.team-two{
+    width:90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+
+.team-col{
+    flex-basis:  31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    margin: 0 20px;
+
+}
+
+.team-col img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-col p{
+    padding: 0;
+    text-align: center;
+
+}
+
+.team-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.team h1{
+    margin-top: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* footer */
+
+.footer{
+    font-size: 10px;
+    background: rgb(36, 35, 35);
+    color: white;
+}
+.footer .social-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.footer .social-icons a{
+    padding: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+#copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyright a{
+    color: rgb(167, 24, 24);
+}
+
